@@ -6,13 +6,13 @@
  * @return {Function} counter
  */
 
-export const createCounter = (n) => {
+// solution
+const createCounter = (n) => {
     return () => n++;
 };
 
-/**
- * const counter = createCounter(10)
- * counter() // 10
- * counter() // 11
- * counter() // 12
- */
+// test
+const counter = createCounter(10);
+console.log(counter()); // 10
+console.log(counter()); // 11
+console.log(counter()); // 12

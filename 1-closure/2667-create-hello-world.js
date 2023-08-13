@@ -5,6 +5,7 @@
  * @return {Function}
  */
 
+// solution
 const createHelloWorld = () => {
     const hello = 'Hello World';
     return () => {
@@ -12,7 +13,6 @@ const createHelloWorld = () => {
     };
 };
 
-/**
- * const f = createHelloWorld();
- * f(); // "Hello World"
- */
+// test
+const f = createHelloWorld();
+console.log(f()); // "Hello World"
